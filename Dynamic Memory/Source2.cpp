@@ -1,33 +1,21 @@
-/******************************************************************************************************************//*
-1. Write a C++ program that creates a dangling pointer by deleting allocated memory but still
-attempting to access it.
-2. Modify the program to set pointers to nullptr after deletion to avoid dangling pointers
-*//******************************************************************************************************************/
-
 /*
 #include<iostream>
 using namespace std;
+void function(int var, int* ptr);
 int main() {
 
-	int* dangling = new int;
-	cout << endl << "Enter any value to store in the Dynamically allocated memory: ";
-	cin >> *dangling;
-	cout << endl << "The value entered by user is: " << *dangling << endl;
+	int var = 10;
+	int* ptr = &var;
+	int newvalue = 20;
+	cout << "Value of Variable before using function: " << *ptr << endl;
 
-	delete dangling;
+	function(newvalue, ptr);
 
-	dangling = nullptr;
-	if (dangling != nullptr) {
-		cout << "Ptr is: " << *dangling << endl;
-	}
-	else {
-		cout << endl << "The pointer in null." << endl;
-	}
-
-
-	//cout << endl << "If we access the inaccessable dangling pointer due to deletion earlier, it happens: " << *dangling << endl;
-
+	cout << "Value of Variable after using function: " << *ptr << endl;
 	system("pause");
 	return 0;
+}
+void function(int var, int* ptr) {
+	*ptr = var;
 }
 */
