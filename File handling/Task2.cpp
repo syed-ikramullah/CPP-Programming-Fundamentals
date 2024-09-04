@@ -1,4 +1,7 @@
-/*
+//Write a program that reads student names and their corresponding scores from a file named
+"grades.txt". The file contains one student name followed by their score on each line. Output the
+student with the highest score.
+	
 #include<iostream>
 #include<fstream>
 using namespace std;
@@ -35,4 +38,3 @@ int main() {
 	system("pause");
 	return 0;
 }
-*/
