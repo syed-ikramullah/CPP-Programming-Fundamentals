@@ -1,4 +1,6 @@
-/*
+//Create a program that reads a line of text from the user using getline() and then prints out the
+number of characters in the inputted line.
+
 #include<iostream>
 #include<fstream>
 using namespace std;
@@ -39,4 +41,3 @@ int main() {
 	system("pause");
 	return 0;
 }
-*/
