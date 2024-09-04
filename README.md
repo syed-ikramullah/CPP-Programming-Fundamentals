@@ -1,5 +1,5 @@
 ## Programming Fundamentals (PF) C++
-Getting started with C++ programming language with very basic concepts like conditional statements (if, else if, switch), loops (for loop, while loop, Do while loop), and one dimentional arrays.
+Getting started with C++ programming language with very basic concepts like two dimentional arrays, file handling, functions, pointers, dynamic memory, etc.
 
 ## Introduction
 This repository includes fundamentals of C++ Programming Language concepts initialising with the very basic ones first.
