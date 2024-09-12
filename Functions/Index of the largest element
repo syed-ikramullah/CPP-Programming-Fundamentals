@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+int location_of_largest(int s, int arr[]);
+
+int main() {
+
+	const int size = 5;
+	int array[size] = { 75,21,40,91,441 };
+
+	cout << "Index of the Largest element of the array is: " << location_of_largest(size, array) << endl;
+
+	system("pause");
+	return 0;
+}
+
+int location_of_largest(int s, int arr[]) {
+	int index = 0;
+	int max = arr[0];
+	cout << "The array we have is: " << endl;
+	for (int i = 0; i < s; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+	for (int i = 0; i < s; i++) {
+		if (max < arr[i]) {
+			max = arr[i];
+			index = i;
+		}
+	}
+	return index;
+}
