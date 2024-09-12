@@ -1,20 +1,26 @@
 #include<iostream>
 using namespace std;
-void reverse(float[], int);
+
+void reverse(int s, float arr[]);
+
 int main() {
 
-	float arr[5] = { 1.2,2.3,3.6,4.9,5.1 };
+	const int size = 5;
+	float array[size] = { 2.2,3.3,4.4,5.5,6.6 };
 
-
+	reverse(size, array);
 
 	system("pause");
 	return 0;
 }
-void reverse(float arr[], int tot) {
+void reverse(int s, float arr[]) {
 
-	
-
-	for (int i = ; i >= 0; i--) {
+	cout << "Array before reversing is: " << endl;
+	for (int i = 0; i < s; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << endl << "Array after reversing is: " << endl;
+	for (int i = s - 1; i >= 0; i--) {
 		cout << arr[i] << " ";
 	}
 }
