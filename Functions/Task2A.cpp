@@ -1,4 +1,3 @@
-/*
 #include<iostream>
 using namespace std;
 void table(int);
@@ -23,4 +22,3 @@ void table(int a) {
 	}
 
 }
-*/
